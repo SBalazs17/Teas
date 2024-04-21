@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/teas.css">
+    <title>Teák</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-1 mx-auto">
+                <h1>Teák</h1>
+            </div>
+        </div>
+      </div>  
+      <div id="teas">
+        <form action="" method="post" class="row">
+            <div class="col-md-4">
+            <label for="name" class="form-label">Megnevezés</label>
+            <input type="text" name="name" id="name" value="Tea" minlength="1" maxlength="90" required class="form-control">
+        </div>
+            <div class="col-md-4">
+                <label for="brand_id" class="form-label">Gyártó</label>
+                <select name="brand_id" id="brand_id" required class="form-select">
+                    <option value="1">Lipton</option>
+                    <option value="2">Tetley</option>
+                    <option value="3" selected>Twinings</option>
+                </select>
+            </div>
+            <div class="col-md-4">
+                <label for="range" class="form-label">Típus</label>
+                <select name="range" id="range" required class="form-select">
+                    <option value="black">Fekete tea</option>
+                    <option value="fruit" selected>Gyümölcs tea</option>
+                    <option value="green">Zöld tea</option>
+                </select>
+            </div>
+            <div class="col-md-4">
+                <label for="format" class="form-label">Egység</label>
+                <select name="format" id="format" required class="form-select">
+                    <option value="tea bag">Filteres</option>
+                    <option value="can">Fémdobozos</option>
+                    <option value="bottle" selected>Palack</option>
+                </select> 
+            </div>
+            <div class="col-md-4">
+                <label for="qty" class="form-label">Mennyiség</label>
+                <input type="number" name="qty" id="qty" value="1" min="1" max="3000" required class="form-control">
+            </div>
+            <div class="col-md-4">
+                <label for="price" class="form-label">Ár</label>
+                <input type="number" name="price" id="price" value="380" min="1" max="5000" required class="form-control">
+            </div>
+            <div class="col-md-4">
+                <label for="unit" class="form-label">Kiszerelés</label>
+                <select name="unit" id="unit" required class="form-select">
+                    <option value="db">darab</option>
+                    <option value="l">liter</option>
+                    <option value="ml">mililiter</option>
+                </select>
+            </div>
+            <div class="col-md-4.git">
+                <input type="submit" value="Ment" id="ment" class="btn btn-success mt-4" class="form-control">
+            </div>
+        </form>
+    </div>    
+    <script src="./js/teas.js"></script>
+</body>
+</html>
