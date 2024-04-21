@@ -13,7 +13,7 @@ const titles =[
 for (const title of titles) 
 {
     const th =document.createElement("th")
-    th.append(document.createTextNode(title))
+    th.append(document.createTextNode(titl))
     tr.appendChild(th)
     thead.append(tr)
     table.append(thead)
